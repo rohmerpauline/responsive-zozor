@@ -143,7 +143,6 @@ nav a:hover
     background-color: rgba(24,24,24,0.8);
     color: white;
     font-size: 0.8em;
-    
 }
 
 .bouton_rouge
@@ -431,9 +430,13 @@ footer h1
     {
     display: block;
     justify-content: center;
+    margin-bottom: 0px;
+    }
+    #listes_amis ul {
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 }
-
 /*For tablets*/
 
 @media only screen and (min-width:300px) and (max-width: 900px) {
@@ -478,12 +481,23 @@ footer h1
         text-align: center;
         line-height: 40px;
     }
+/*Footer*/
     #tweet , #mes_photos {
         margin-right: 5%;
     }
     #mes_photos img {
         width: 30%;
     }
+    #listes_amis
+    {
+    display: block;
+    justify-content: center;
+    }
+    #listes_amis ul {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
 }
 
 
