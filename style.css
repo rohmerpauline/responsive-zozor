@@ -402,6 +402,7 @@ footer h1
 /*Footer*/
     footer {
         display : block;
+        margin-bottom: 5%;
     }
     #tweet , #mes_photos , #mes_amis
     {
@@ -482,6 +483,9 @@ footer h1
         line-height: 40px;
     }
 /*Footer*/
+    footer {
+    margin-bottom: 5%;
+    }
     #tweet , #mes_photos {
         margin-right: 5%;
     }
@@ -497,8 +501,5 @@ footer h1
         margin-bottom: 0px;
         margin-top: 0px;
     }
-
 }
-
-
 /*
