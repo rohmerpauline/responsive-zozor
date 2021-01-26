@@ -295,8 +295,10 @@ footer h1
 
 @media only screen and (max-width:380px) {
     #bloc_page {
-        width: 300px;
-        margin: auto;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 5%;
     }
 /*Header*/
     header {
@@ -370,7 +372,7 @@ footer h1
     }
     article h1 {
         font-size: 25px;
-
+        text-align: left;
     }
     .ico_categorie
     {
@@ -413,7 +415,6 @@ footer h1
         font-size: 1.2em;
         
     }
-
     footer h1
     {
         font-size: 25px;
@@ -435,7 +436,7 @@ footer h1
 
 /*For tablets*/
 
-@media only screen and (min-width:300px) and (max-width: 768px) {
+@media only screen and (min-width:300px) and (max-width: 900px) {
     #bloc_page {
         width: 90%;
         margin-right: 5%;
@@ -446,6 +447,7 @@ footer h1
     header {
         display: block;
         justify-content: center;
+        padding-bottom: 2px;
     }
     #logo {
         justify-content: center;
@@ -459,64 +461,30 @@ footer h1
         margin-bottom: 10px;
     }
 /*Navigation*/
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        justify-content: center;
+    }
+/*Main*/
+    article h1 {
+        text-align: left;
+    }
+    article p , aside p {
+        font-size: 1.2em;
+    }
+    aside p:last-child {
+        text-align: center;
+        line-height: 40px;
+    }
+    #tweet , #mes_photos {
+        margin-right: 5%;
+    }
+    #mes_photos img {
+        width: 30%;
+    }
 }
-
-/*
-
-nav ul {
-    display : block;
-    justify-content: center;
-}
-nav li {
-   text-align: center;
-   padding-bottom: 5px;
-}
-nav li:last-child {
-    padding-bottom: 10px;
-}
-header
-{
-    background: url('images/separateur.png') repeat-x bottom;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-#titre_principal
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#logo
-{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-#logo img
-{
-    width: 59px;
-    height: 60px;
-}
-
-header h1
-{
-    font-family: 'BallparkWeiner', serif;
-    font-size: 2.5em;
-    font-weight: normal;
-    margin: 0 0 0 10px;
-}
-
-header h2
-{
-    font-family: Dayrom, serif;
-    font-size: 1.1em;
-    margin-top: 0px;
-    font-weight: normal;
-}
-
 
 
 /*
