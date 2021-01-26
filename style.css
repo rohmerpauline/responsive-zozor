@@ -410,10 +410,8 @@ footer h1
         margin-left: 5%;
         margin-right: 5%;
     }
-    footer p, footer ul
-    {
-        font-size: 1.2em;
-        
+    footer p , footer ul {
+        font-size: 1.2em; 
     }
     footer h1
     {
