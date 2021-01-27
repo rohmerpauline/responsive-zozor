@@ -294,104 +294,71 @@ footer h1
 
 @media only screen and (max-width:380px) {
     #bloc_page {
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
+        width: 90vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
         margin-top: 5%;
+        margin-bottom: 5%
     }
 /*Header*/
     header {
-        display: block;
+        display: grid;
+        grid-template-rows : auto auto;
+        width: 100%;
         justify-content: center;
         text-align: center;
-
+        justify-items: center;
     }
-    #titre_principal {
-        display: block;
-        margin-top: 20px;
-    }
-    #logo {
-        display: inline;
-        align-items: center;
-    }
-    header h1 {
-        margin-bottom: 10px;
-        margin-left: 0px;
-    }
-    header h2 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
 /*Navigation*/
     nav ul {
-        display : block;
-        justify-content: center;
+        display: grid;
+        grid-template-rows : repeat (4, auto);
+        text-align: center;
     }
     nav li {
-       text-align: center;
-       padding-bottom: 5px;
+        
+        font-size: 20px;
     }
-    nav li:last-child {
-        padding-bottom: 10px;
-    }
-
 /*Bannière*/
     #banniere_image {
         background-position : 20% 0%; 
         height: 350px;
         background-size: cover;
-      
     }
     #banniere_description {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: auto auto;
         height : 80px;
+        justify-content: center;
+        align-content: space-between;
         text-align: center;
         font-size: 1em;
     }
     .bouton_rouge {
         position: relative;
-        justify-content: center;
         width: 120px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        font-size: 1em;
     }
-
 /* Main */
     section {
-        display : block;
+        display : grid; 
+        grid-template-rows: auto auto;
+        justify-content: center;
     }
     article {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 0px;
     }
     article h1 {
         font-size: 25px;
         text-align: left;
     }
-    .ico_categorie
-    {
-        margin-right: 20px;
-    }
-    article p
-    {
+    article p, aside p {
         font-size: 1.2em;
-    }
-    aside {
-        font-size: 1.2em;
-        margin-right: 2px;
-        margin-left: 2px;
-        padding-left: 15px;
-        padding-right: 15px;
     }
     aside h1 {
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
-
     }
     #fleche_bulle {
         display: none;
@@ -401,14 +368,19 @@ footer h1
     }
 /*Footer*/
     footer {
-        display : block;
-        margin-bottom: 5%;
+        display : grid;
+        grid-template-rows: repeat(3, auto);
+        width: 100%;
     }
-    #tweet , #mes_photos , #mes_amis
-    {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+    footer #tweet, footer #mes_amis, footer #mes_photos {
+        width: 100%;
+    }
+    #mes_photos img {
+        width: 30%;
+    }
+    #listes_amis {
+        display: grid;
+        grid-template-rows: auto auto;
     }
     footer p , footer ul {
         font-size: 1.2em; 
@@ -417,87 +389,67 @@ footer h1
     {
         font-size: 25px;
     }
-    #mes_amis ul
-    {
-        padding-left: 0px;
-        margin-left: 10px;
-    }
-    #mes_photos img {
-        width: 30%;
-    }
-    #listes_amis
-    {
-    display: block;
-    justify-content: center;
-    margin-bottom: 0px;
-    }
     #listes_amis ul {
         margin-bottom: 0px;
         margin-top: 0px;
+        list-style-position: inside;
     }
 }
-/*For tablets*/
 
+/*For tablets*/
 @media only screen and (min-width:300px) and (max-width: 900px) {
     #bloc_page {
         width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-        margin-top: 5%;;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5%;
     }
 /*Header*/
-    header {
-        display: block;
-        justify-content: center;
-        padding-bottom: 2px;
-    }
-    #logo {
-        justify-content: center;
-    }
-    header h1 {
-        margin-bottom: 10px;
-        margin-left: 0px;
-    }
-    header h2 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-/*Navigation*/
-    nav {
-        justify-content: center;
-    }
-    nav ul {
-        justify-content: center;
-    }
-/*Main*/
-    article h1 {
-        text-align: left;
-    }
-    article p , aside p {
-        font-size: 1.2em;
-    }
-    aside p:last-child {
-        text-align: center;
-        line-height: 40px;
-    }
-/*Footer*/
-    footer {
-    margin-bottom: 5%;
-    }
-    #tweet , #mes_photos {
-        margin-right: 5%;
-    }
-    #mes_photos img {
-        width: 30%;
-    }
-    #listes_amis
-    {
-    display: block;
+header {
+    display: grid;
+    grid-template-rows : auto auto;
+    width: 100%;
     justify-content: center;
-    }
-    #listes_amis ul {
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
+    text-align: center;
+    justify-items: center;
 }
-/*
+/*Main*/
+section {
+    display : grid; 
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+#fleche_bulle {
+    display: none;
+}
+article h1 {
+    font-size: 25px;
+    text-align: left;
+}
+article p , aside p {
+    font-size: 1.2em;
+}
+aside p:last-child {
+    text-align: center;
+}
+aside h1 {
+    font-size: 25px;
+    text-align: center;
+}
+/*Footer*/
+#tweet, #mes_photos {
+    margin-right: 5%;
+}
+#mes_photos img {
+    width: 30%;
+}
+#listes_amis {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#listes_amis ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    list-style-position: inside;
+}
+}
